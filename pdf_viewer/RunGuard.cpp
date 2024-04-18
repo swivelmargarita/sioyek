@@ -121,7 +121,7 @@ void RunGuard::sendMessage(const QByteArray &message)
         }
     } else {
         qCritical() << "Secondary application cannot connect to IPC server.";
-        qCritical() << "Socker error: " << socket.error();
+        qCritical() << "Socket error: " << socket.error();
         QCoreApplication::exit();
     }
 }
